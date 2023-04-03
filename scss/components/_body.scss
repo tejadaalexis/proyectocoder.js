@@ -1,0 +1,52 @@
+.cuerpo{
+    background: $color-secundario;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 30px;
+    .quienes{
+        text-align: center;
+        font-size: 2.5rem;
+        color: black;
+        text-decoration-line: underline;
+    }
+    .texto_index{
+        text-align: center;
+    }
+}
+.titulo{
+    text-align: center;
+    font-size: 2.5rem;
+    color: black;
+    font-family: 'Rubik Distressed', cursive;
+}
+
+.talles{
+    text-align: center;
+    font-size: 2.5rem;
+    color: black;
+    text-decoration-line: underline;
+    
+}
+.ctalles{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+.contenedor_img{
+    width: 75%;
+    height: 700px;
+    margin: 30px;
+    .tremeras{
+        align-items: center;
+        width: 100%;
+        height: 600px;  
+    }
+    .tpantalones{
+        width: 100%;
+        height: 600px;
+    }
+}
+

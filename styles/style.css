@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+* ::selection {
+  background-color: aqua;
+  color: white;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+.encabezado {
+  font-size: 1rem;
+  background: #b8bedd;
+  font-size: x-large;
+  display: flex;
+}
+.encabezado .dropdown-menu {
+  background: #b8bedd;
+}
+.encabezado .clogo {
+  display: flex;
+  align-items: center;
+}
+.encabezado .logo {
+  width: 100px;
+}
+.encabezado .logo__texto {
+  text-align: center;
+  font-size: xxx-large;
+}
+
+.cuerpo {
+  background: #f0e6ef;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 30px;
+}
+.cuerpo .quienes {
+  text-align: center;
+  font-size: 2.5rem;
+  color: black;
+  text-decoration-line: underline;
+}
+.cuerpo .texto_index {
+  text-align: center;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 2.5rem;
+  color: black;
+  font-family: "Rubik Distressed", cursive;
+}
+
+.talles {
+  text-align: center;
+  font-size: 2.5rem;
+  color: black;
+  text-decoration-line: underline;
+}
+
+.ctalles {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.contenedor_img {
+  width: 75%;
+  height: 700px;
+  margin: 30px;
+}
+.contenedor_img .tremeras {
+  align-items: center;
+  width: 100%;
+  height: 600px;
+  object-fit: none;
+}
+.contenedor_img .tpantalones {
+  width: 100%;
+  height: 600px;
+  object-fit: none;
+}
+
+.redes {
+  background: #b8bedd;
+}
+.redes .copyright {
+  font-size: 0.7rem;
+}
+
+.iconos {
+  font-size: 3rem;
+}
+
+.instagram {
+  border: #bc2a8d;
+  border-radius: 50%;
+}
+
+.instagram:hover {
+  border: 5px solid #bc2a8d;
+  border-radius: 50%;
+  box-shadow: 0 0 15px #bc2a8d;
+  transition: all 0.5s ease;
+  color: #bc2a8d;
+  text-shadow: 0 0 15px #bc2a8d;
+  transition: all 0.5s ease;
+}
+
+.whatsapp {
+  border: #4dc247;
+  border-radius: 50%;
+}
+
+.whatsapp:hover {
+  border: 5px solid #4dc247;
+  border-radius: 50%;
+  box-shadow: 0 0 15px #4dc247;
+  transition: all 0.5s ease;
+  color: #4dc247;
+  text-shadow: 0 0 15px #4dc247;
+  transition: all 0.5s ease;
+}
+
+.img1 {
+  width: 100px;
+  height: 150px;
+}
+
+.tarjeta_producto {
+  height: 150px;
+  background: #b8bedd;
+  padding: 10px;
+  margin-block: 10px;
+  border-radius: 15px;
+  border: rgba(0, 0, 0, 0.445) solid 5px;
+  transition-duration: 0.75s;
+}
+
+.tarjeta_producto:hover {
+  box-shadow: 0px 0px 50px 25px rgba(0, 0, 0, 0.9);
+  transform: scale(1.1);
+}
+
+.card-title {
+  color: black;
+  text-decoration: underline;
+}
+
+.btn_tarjeta {
+  border-radius: 15%;
+  border-color: black;
+}
+
+.contacto {
+  text-align: center;
+  font-size: 2.5rem;
+  color: black;
+  text-decoration-line: underline;
+}
+
+.buzos {
+  text-align: center;
+  font-size: 2.5rem;
+  color: black;
+  text-decoration-line: underline;
+}
+
+.camperas {
+  text-align: center;
+  font-size: 2.5rem;
+  color: black;
+  text-decoration-line: underline;
+}
+
+.pantalones {
+  text-align: center;
+  font-size: 2.5rem;
+  color: black;
+  text-decoration-line: underline;
+}
+
+.remeras {
+  text-align: center;
+  font-size: 2.5rem;
+  color: black;
+  text-decoration-line: underline;
+}
+
+/*# sourceMappingURL=style.css.map */

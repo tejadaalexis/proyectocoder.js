@@ -1,0 +1,23 @@
+.encabezado{
+    font-size: 1rem;
+    background: $color-principal;
+    font-size:x-large;
+    display: flex;
+
+    .dropdown-menu{
+        background:$color-principal;
+    }
+    .clogo{
+        display: flex;
+        align-items: center;
+
+    }
+    .logo{
+        width: 100px;
+    }
+    .logo__texto{
+        text-align: center;
+        font-size:xxx-large;
+    }
+}
+
