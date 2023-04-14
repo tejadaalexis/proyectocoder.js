@@ -67,13 +67,39 @@
                     <h2>Carrito</h2>
                     <ul id="carrito" class="list-group"></ul>
                     <hr>
-                    <p class="text-right">Total: <span id="total"></span>&dollar;;</p>
-                    <button id="boton-vaciar" class="btn btn-primary">Vaciar</button>
+                    <p class="text-right">Total: &dollar;<span id="total"></span></p>
+                    <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
+                    <button id="boton-comprar" class="btn btn-primary">Comprar</button>
+                    <hr>
+                    <h2>Conversor de Moneda</h2>
+                    <h5>Tipo de cambio oficial sin impuestos</h5>
+                    <div class="moneda">
+                        <select id="moneda-uno">
+                            <option value="ARS" selected>PESO  ARGENTINO</option>
+                        </select>
+                        <input type="number" id="cantidad-uno" placeholder="0" value="1">
+                    </div>
+                    <div class="taza-cambio-container">
+                        <p id="taza">
+                            Cambio
+                        </p>
+                        <div class="cambio" id="cambio"></div>
+                    </div>
+                    <div class="moneda">
+                        <select id="moneda-dos">
+                            <option value="BRL">REALES</option>
+                            <option value="CLP">PESO CHILENO</option>
+                            <option value="EUR">EURO</option>
+                            <option value="USD"selected>USD</option>
+                            <option value="UYU">PESO URUGUAY</option>
+                        </select>
+                        <input type="number" id="cantidad-dos" placeholder="0">
+                    </div>
+                </aside>
+            </div>
                 </aside>
             </div>
         </div>
-        
-        
     </main>
     <footer class="text-center text-black redes">
         <div class="container p-4">
@@ -119,6 +145,8 @@
     </footer>
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="../js/javascript.js"></script>
+    <script src="../js/conversor.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>

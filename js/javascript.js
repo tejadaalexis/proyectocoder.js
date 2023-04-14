@@ -23,6 +23,18 @@ const baseDeDatos = [
         nombre: 'Red Hot Chilli Peppers',
         precio: 2600,
         imagen: '../imagenes/remeras/redhot.jpg'
+    },
+    {
+        id: 5,
+        nombre: 'Mortal Kombat',
+        precio: 2750,
+        imagen: '../imagenes/remeras/mortal-kombat.jpg'
+    },
+    {
+        id: 6,
+        nombre: 'Dragon Ball Super',
+        precio: 2550,
+        imagen: '../imagenes/remeras/vegeta.jpg'
     }
 
 ];
@@ -33,6 +45,7 @@ const DOMitems = document.querySelector('#items');
 const DOMcarrito = document.querySelector('#carrito');
 const DOMtotal = document.querySelector('#total');
 const DOMbotonVaciar = document.querySelector('#boton-vaciar');
+const DOMbotonComprar = document.querySelector('#boton-comprar');
 
 // Funciones
 
@@ -58,11 +71,11 @@ function renderizarProductos() {
         // Precio
         const miNodoPrecio = document.createElement('p');
         miNodoPrecio.classList.add('card-text');
-        miNodoPrecio.textContent = `${info.precio}${divisa}`;
+        miNodoPrecio.textContent = `${divisa}${info.precio}`;
         // Boton 
         const miNodoBoton = document.createElement('button');
         miNodoBoton.classList.add('btn', 'btn-primary');
-        miNodoBoton.textContent = '+';
+        miNodoBoton.textContent = 'Agregar al Carrito';
         miNodoBoton.setAttribute('marcador', info.id);
         miNodoBoton.addEventListener('click', anyadirProductoAlCarrito);
         // Insertamos
@@ -109,11 +122,11 @@ function renderizarCarrito() {
         // Creamos el nodo del item del carrito
         const miNodo = document.createElement('li');
         miNodo.classList.add('list-group-item', 'text-right', 'mx-2');
-        miNodo.textContent = `${numeroUnidadesItem} x ${miItem[0].nombre} - ${miItem[0].precio}${divisa}`;
+        miNodo.textContent = `${numeroUnidadesItem} x ${miItem[0].nombre} - ${divisa}${miItem[0].precio}`;
         // Boton de borrar
         const miBoton = document.createElement('button');
         miBoton.classList.add('btn', 'btn-danger', 'mx-5');
-        miBoton.textContent = 'X';
+        miBoton.textContent = 'Eliminar Producto';
         miBoton.style.marginLeft = '1rem';
         miBoton.dataset.item = item;
         miBoton.addEventListener('click', borrarItemCarrito);
@@ -162,10 +175,37 @@ function vaciarCarrito() {
     carrito = [];
     // Renderizamos los cambios
     renderizarCarrito();
+    Swal.fire({
+        title:'Tienda CRIPP',
+        text:'Eliminamos su carrito. Gracias',
+        position:'center',
+        allowOutsideClick:true,
+        allowEscapeKey:false,
+        allowEnterKey:false,
+        stopKeydownPropagation:false,
+        timer:2500,
+    });
+}
+function comprarCarrito() {
+    // Limpiamos los productos guardados
+    carrito = [];
+    // Renderizamos los cambios
+    renderizarCarrito();
+    Swal.fire({
+        title:'Tienda CRIPP',
+        text:'Su compra fue exitosa. Gracias',
+        position:'center',
+        allowOutsideClick:true,
+        allowEscapeKey:false,
+        allowEnterKey:false,
+        stopKeydownPropagation:false,
+        timer:2500,
+    });
 }
 
 // Eventos
 DOMbotonVaciar.addEventListener('click', vaciarCarrito);
+DOMbotonComprar.addEventListener('click', comprarCarrito);
 
 // Inicio
 renderizarProductos();

@@ -154,6 +154,19 @@ ul, ol {
   transform: scale(1.1);
 }
 
+.card {
+  margin: 10px;
+  border-radius: 15px;
+  border: rgba(0, 0, 0, 0.445) solid 5px;
+  background-color: #b8bedd;
+  transition-duration: 0.75s;
+  
+}
+.card:hover {
+  box-shadow: 0px 0px 50px 25px rgba(0, 0, 0, 0.9);
+  transform: scale(1.1);
+}
+
 .card-title {
   color: black;
   text-decoration: underline;
@@ -200,3 +213,46 @@ ul, ol {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+/*Estilizacion caja cambio */
+
+.cambio{
+  font-size: 14px;
+  padding: 0 10px;
+  font-weight: 600;
+  
+}
+.btn-cambio{
+color: rgb(17, 17, 17);
+background: #b8bedd;
+cursor: pointer;
+border-radius: 5px;
+font-size: 20px;
+padding: 5px 12px;
+}
+.moneda{
+padding: 40px 10px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.moneda select{
+padding: 10px 20px 10px 10px;
+border: 1px solid #b8bedd;
+font-size: 16px;
+
+}
+
+.moneda input {
+border: 0;
+font-size: 30px;
+text-align: center;
+}
+
+.taza-cambio-container{
+display: flex;
+align-items: center;
+justify-content: space-between;
+text-align: center;
+}
